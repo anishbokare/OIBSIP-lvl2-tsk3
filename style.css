@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #03a8fb, #0d0d0d00);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: #0a0c0e;
+    border-radius: 8px;
+    background: #f7f7f7; /* Light grey background for the container */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+}
+
+.task-entry, .task-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-entry input, .task-entry select, .task-entry button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.task-entry input:focus, .task-entry select:focus, .task-entry button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#add-task-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#add-task-button:hover {
+    background-color: #0056b3;
+}
+
+.task-filters button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filter-all {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#filter-active {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+#filter-completed {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.task-filters button:hover {
+    opacity: 0.8;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: #b4b2b2cd; /* White background for each task item */
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.task-item .complete-button {
+    color: #539620;
+}
+
+.task-item .delete-button {
+    color: #ff0606;
+}
+
+.task-item button:hover {
+    opacity: 0.7;
+}
